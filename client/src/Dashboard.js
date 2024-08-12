@@ -22,13 +22,13 @@ const Dashboard = () => {
     }
     const fetchBannerDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/banner`);
+        const response = await axios.get(`https://tuf-server-7xaa.onrender.com/api/banner`);
         setDescription(response.data.description);
         setTimer(response.data.timer);
         setLink(response.data.link);
         setVisible(response.data.visible);
         setImage(response.data.image);
-        setPreviewImage(`http://localhost:5000/uploads/${response.data.image}`);
+        setPreviewImage(`https://tuf-server-7xaa.onrender.com/uploads/${response.data.image}`);
       } catch (e) {
         console.log(e);
       }
@@ -53,7 +53,7 @@ const Dashboard = () => {
     formData.append('bannerImage', image);
 
     try {
-      await axios.post('http://localhost:5000/api/banner/updateBanner', formData, {
+      await axios.post('https://tuf-server-7xaa.onrender.com/api/banner/updateBanner', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

@@ -8,7 +8,7 @@ const Banner = () => {
   useEffect(() => {
     const fetchBannerDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/banner`);
+        const response = await axios.get(`https://tuf-server-7xaa.onrender.com/api/banner`);
         setBannerInfo(response.data);
         setCountdown(response.data.timer);
       } catch (e) {
@@ -35,7 +35,7 @@ const Banner = () => {
 
       <div className="banner">
         <h1>{bannerInfo.description}</h1>
-        <img className='img-fluid' src={`http://localhost:5000/uploads/${bannerInfo.image}`} alt="Banner" />
+        <img className='img-fluid' src={`https://tuf-server-7xaa.onrender.com/uploads/${bannerInfo.image}`} alt="Banner" />
         <a href={bannerInfo.link}>Learn more</a>
         <p>Banner will disappear in: {countdown}s</p>
       </div>
