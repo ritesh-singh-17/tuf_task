@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tuf-task/static/css/main.1d2ecfbb.css",
+    "main.js": "/tuf-task/static/js/main.a2a9258e.js",
+    "index.html": "/tuf-task/index.html",
+    "main.1d2ecfbb.css.map": "/tuf-task/static/css/main.1d2ecfbb.css.map",
+    "main.a2a9258e.js.map": "/tuf-task/static/js/main.a2a9258e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d2ecfbb.css",
+    "static/js/main.a2a9258e.js"
+  ]
+}
