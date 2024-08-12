@@ -16,8 +16,8 @@ const Dashboard = () => {
   useEffect(() => {
 
     if (!token) {
-      alert('You are not allowed to access this page')
-      navigate('/');
+      alert('You are not allowed to access this page, Please login')
+      navigate('/login');
       return;
     }
     const fetchBannerDetails = async () => {
