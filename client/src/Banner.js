@@ -10,7 +10,7 @@ const Banner = () => {
       try {
         const response = await axios.get(`https://tuf-server-7xaa.onrender.com/api/banner`);
         setBannerInfo(response.data);
-        setCountdown(response.data.timer);
+        setCountdown(3);
       } catch (e) {
         console.log(e);
       }
@@ -28,18 +28,17 @@ const Banner = () => {
     return () => clearInterval(intervalId);
   }, [countdown, bannerInfo.visible]);
 
-  if (!bannerInfo.visible || countdown <= 0) return null;
-
   return (
     <>
 
+      {countdown<=0 ? <div className='mt-5 text-center'><button className='btn btn-primary' onClick={() => setCountdown(60)}>Click Here to Reset Timer</button></div> :
       <div className="banner">
         <h1>{bannerInfo.description}</h1>
         <img className='img-fluid' src={`https://tuf-server-7xaa.onrender.com/uploads/${bannerInfo.image}`} alt="Banner" />
         <a href={bannerInfo.link}>Learn more</a>
         <p>Banner will disappear in: {countdown}s</p>
       </div>
-      {!bannerInfo && <button className='btn btn-primary' onClick={() => setCountdown(60)}>Click Here to Reset Timer</button>}
+      }
     </>
   );
 };
