@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Login and Register Styles */
+.login-container, .register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.login-form, .register-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: left;
+}
+
+.login-form h2, .register-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.login-form input, .register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-form button, .register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form button:hover, .register-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.dashboard-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: left;
+}
+
+.dashboard-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.dashboard-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.dashboard-form input[type="text"],
+.dashboard-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.dashboard-form input[type="checkbox"] {
+  margin-bottom: 15px;
+}
+
+.dashboard-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dashboard-form button:hover {
+  background-color: #218838;
+}
+
+/* Banner Styles */
+.banner {
+  background-color: #f0f4f6;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.banner p {
+  margin: 10px 0;
+}
+
+.banner a {
+  color: red;
+  text-decoration: none;
+}
+
+.banner a:hover {
+  color: red;
+  text-decoration: underline;
+}
